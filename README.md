@@ -85,6 +85,8 @@ chown -R $MOZDEF_USER:$MOZDEF_USER /var/log/mozdef
 
 External services
 -----------------
+It’s recommended in a distributed environment, to have only 1 Alert Service node, 1 Web Service node, and N Ingest Service nodes.
+
 
 ## Elastic Search
 
