@@ -1,5 +1,7 @@
 Mozdef lxc setup
 ----------------
+https://mozdef.readthedocs.io/en/latest/installation/manual/initial_setup.html#python-setup
+
 
 Prepare the host and run the container
 ````
@@ -69,6 +71,7 @@ git clone https://github.com/mozilla/MozDef.git $MOZDEF_PATH/envs/mozdef
 # activate the environment
 source $MOZDEF_PATH/envs/python/bin/activate
 cd $MOZDEF_PATH/envs/mozdef
+virtualenv -p python3 $MOZDEF_PATH/envs/python
 PYCURL_SSL_LIBRARY=nss pip3 install -r requirements.txt
 
 # configure rsyslog
